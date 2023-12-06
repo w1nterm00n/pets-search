@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="style/css" href="style.css">
+    <title>Добавить объявление</title>
+  </head>
+
+  <body>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="logo" style="display: flex; gap: 10px;">
+          <img src="../img/logo.png" alt="logo" style="width: 40px; height: 40px;">
+          <a class="navbar-brand" href="#" style="color: darkslategray;">Поиск животных</a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+                <a class="nav-link" href="index.html"> Главная</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="personal_cabinet.html"> Личный кабинет</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="add_advert.html"> <b>Добавить объявление</b></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="search_advert.html"> Поиск по объявлениям </a>
+              </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <h3>Добавить объявление</h3>
+    <p style="text-align: center;">Чтобы добавить объявление вы должны быть зарегестрированы на сайте</p>
+
+    <div class="addAdvertDiv">
+
+      <label for="advertType" class="form-label">Тип объявление</label>
+      <input class="form-control" list="advertTypeOptions" id="advertType" placeholder="Тип объявления">
+      <datalist id="advertTypeOptions">
+        <option value="Потеряно животное">
+        <option value="Найдено животное">
+      </datalist>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Животное, порода</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Например 'собака хаски'" required>
+      </div>
+
+      <label for="chooseNeighbour" class="form-label">Район в котором нашли животное</label>
+      <input class="form-control" list="NeighbourOptions" id="chooseNeighbour" placeholder="Введите район..">
+      <datalist id="NeighbourOptions">
+        <option value="Приморский">
+        <option value="Центральный">
+        <option value="Кировский">
+        <option value="Выборгский">
+        <option value="Курортный">
+      </datalist>
+
+      <div class="mb-3">
+        <label for="dateInput" class="form-label">Дата, когда вы нашли / потеряли животное</label>
+        <input type="date" class="form-control" id="dateInput" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="chipInput" class="form-label"> Номер чипа (если есть)</label>
+        <input type="text" class="form-control" id="chipInput">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Описание</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+      <button type="submit" id="publicateAdvert" class="btn btn-primary">Опубликовать</button>
+    </div>
+
+    <footer>
+      <p>GET PET BACK © Copyright, 2022</p>
+      <p>Все права защищены</p>
+    </footer>
+  </body>
+</html>

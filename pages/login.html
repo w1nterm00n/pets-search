@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="style/css" href="style.css">
+    <title>Вход</title>
+  </head>
+
+  <body>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="logo" style="display: flex; gap: 10px;">
+          <img src="../img/logo.png" alt="logo" style="width: 40px; height: 40px;">
+          <a class="navbar-brand" href="#" style="color: darkslategray;">Поиск животных</a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+                <a class="nav-link" href="index.html"> Главная</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="personal_cabinet.html"><b>Личный кабинет</b></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="add_advert.html">Добавить объявление</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="search_advert.html"> Поиск по объявлениям </a>
+              </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+      <h3 class="registration_h3">Вход</h3>
+    
+      
+      <form class="registration_form">
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Ваша почта</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Мы не с кем ею не делимся</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Введите пароль</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <button type="submit" id="sendLoginFormBtn" class="btn btn-primary">Войти</button>
+        <button  class="btn btn-primary leave_btn">Отмена</button>
+      </form>
+
+      <footer>
+        <p>GET PET BACK © Copyright, 2022</p>
+        <p>Все права защищены</p>
+      </footer>
+  </body>
+</html>

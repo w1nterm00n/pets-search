@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="style/css" href="style.css">
+    <title>Объявление</title>
+  </head>
+
+  <body>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="logo" style="display: flex; gap: 10px;">
+          <img src="../img/logo.png" alt="logo" style="width: 40px; height: 40px;">
+          <a class="navbar-brand" href="#" style="color: darkslategray;">Поиск животных</a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+                <a class="nav-link" href="index.html"> Главная</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="personal_cabinet.html">Личный кабинет</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="add_advert.html">Добавить объявление</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="search_advert.html"> <b>Поиск по объявлениям </b></a>
+              </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+      <h3 style="text-align: center; margin: 40px 0;">Название объявления</h3>
+    
+      <div class="card mb-3" style="width: fit-content; margin: 0 auto;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/brown_cat.jpg" class="img-fluid rounded-start" alt="brown cat">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title advertType">Найден / Потерян</h5>
+              <p class="card-text advertDescription"> Описание: </p>
+              <p class="card-text advertChipNum"> Номер чипа (если есть): </p>
+              <div style="display: flex; gap: 20px; margin-bottom: 20px;">
+                <img src="../img/location_icon.png" alt="location">
+                <p class="card-text advertDescription"> Город, район </p>
+              </div>
+              <div style="display: flex; gap: 20px;">
+                <img src="../img/calendar.png" alt="date">
+                <p class="card-text advertDescription"> Дата </p>
+              </div>
+              <small class="text-body-secondary"><a href="#!">Автор публикации</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>GET PET BACK © Copyright, 2022</p>
+        <p>Все права защищены</p>
+      </footer>
+  </body>
+</html>

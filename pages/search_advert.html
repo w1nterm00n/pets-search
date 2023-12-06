@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="style/css" href="style.css">
+    <title>Поиск по объявлениям</title>
+  </head>
+
+  <body>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="logo" style="display: flex; gap: 10px;">
+          <img src="../img/logo.png" alt="logo" style="width: 40px; height: 40px;">
+          <a class="navbar-brand" href="#" style="color: darkslategray;">Поиск животных</a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+                <a class="nav-link" href="index.html"> Главная</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="personal_cabinet.html"> Личный кабинет</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="add_advert.html">Добавить объявление</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="search_advert.html"> <b>Поиск по объявлениям</b> </a>
+              </li>
+              
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <form class="d-flex searchAdvertField">
+      <input class="form-control me-2" type="search" placeholder="Район" aria-label="Search" required>
+      <input class="form-control me-2" type="search" placeholder="Животное" aria-label="Search" required>
+      <button class="btn btn-outline-success" type="submit">Искать</button>
+    </form>
+    
+
+    <footer>
+      <p>GET PET BACK © Copyright, 2022</p>
+      <p>Все права защищены</p>
+    </footer>
+  </body>
+</html>

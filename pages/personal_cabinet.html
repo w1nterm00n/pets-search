@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="style/css" href="style.css">
+    <title>Личный кабинет</title>
+  </head>
+
+  <body>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="logo" style="display: flex; gap: 10px;">
+          <img src="../img/logo.png" alt="logo" style="width: 40px; height: 40px;">
+          <a class="navbar-brand" href="#" style="color: darkslategray;">Поиск животных</a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+                <a class="nav-link" href="index.html"> Главная</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="personal_cabinet.html"> <b>Личный кабинет</b></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="add_advert.html">Добавить объявление</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="search_advert.html"> Поиск по объявлениям </a>
+              </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    
+    <h2 style="text-align: center; margin: 40px 0;">Личный кабинет</h2>
+
+      <div class="not_register_div">
+        <p>Вы не авторизованы!</p>
+        <div class="authorization">
+          <a href="registration.html">Регистрация</a>
+          <a href="login.html">Вход</a>
+        </div>
+      </div>
+
+
+      <div class="personalCabinet" style="display: none;">
+        <div class="card personalCabinetCard" style="width: 18rem;">
+          <img src="../img/avatar.jpg" class="card-img-top" alt="ava">
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Имя: </li>
+            <li class="list-group-item">Почта: </li>
+            <li class="list-group-item">Номер телефона: </li>
+            <li class="list-group-item"><b>id пользователя: </b></li>
+          </ul>
+        </div>
+
+        <h4 style="text-align: center; margin: 40px 0;">Объявления пользователя</h4>
+        <div style="display: flex; justify-content: end;">
+          <button class="btn btn-primary" style="margin:0 100px 30px 0;">Добавить объявление</button>
+        </div>
+        
+        
+        <div class="card-group userAdverts">
+          <div class="card">
+            <img src="../img/kamushoviy_cat.jpg" class="card-img-top" alt="камышовый кот">
+            <div class="card-body">
+              <h5 class="card-title">Найден камышевый кот</h5>
+              <small class="text-body-secondary"><a href="advert.html">подробнее..</a></small>
+              <div class="ChangeOrDeleteAdvert">
+                <button><img src="../img/delete_icon.png" alt="delete icon"></button>
+                <button><img src="../img/change_icon.png" alt="change icon"></button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../img/kamushoviy_cat.jpg" class="card-img-top" alt="камышовый кот">
+            <div class="card-body">
+              <h5 class="card-title">Найден камышевый кот</h5>
+              <small class="text-body-secondary"><a href="advert.html">подробнее..</a></small>
+              <div class="ChangeOrDeleteAdvert">
+                <button><img src="../img/delete_icon.png" alt="delete icon"></button>
+                <button><img src="../img/change_icon.png" alt="change icon"></button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../img/kamushoviy_cat.jpg" class="card-img-top" alt="камышовый кот">
+            <div class="card-body">
+              <h5 class="card-title">Найден камышевый кот</h5>
+              <small class="text-body-secondary"><a href="advert.html">подробнее..</a></small>
+              <div class="ChangeOrDeleteAdvert">
+                <button><img src="../img/delete_icon.png" alt="delete icon"></button>
+                <button><img src="../img/change_icon.png" alt="change icon"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="width: fit-content; margin: 0 auto;">
+        <div class="card" style="width: fit-content; margin: 50px 0 200px 0; border: none;">
+          <div class="card-header" style="text-align: center; padding: 20px 0;">
+            <b>Статистика пользователя</b>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Количество дней с момента регистрации:</li>
+            <li class="list-group-item">Количество объявлений: </li>
+            <li class="list-group-item">Количество животных, нашедших дом благодаря пользователю: </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <footer>
+        <p>GET PET BACK © Copyright, 2022</p>
+        <p>Все права защищены</p>
+      </footer>
+  </body>
+</html>
